@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 	public Transform Player;
-	public float m_speed = 0.1f;
+	public float m_speed = 0.1f; //nazwy _
 	Camera mycam;
 
 
