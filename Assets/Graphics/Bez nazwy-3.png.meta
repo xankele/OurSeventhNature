@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ada95c4fbc7820945b02fa6fb14ceb24
+guid: bf3b396547867ec49af5ccbd8b22d646
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5921198693532275173
-    second: drzewo_01_0
+      213: 8235267373946176127
+    second: Bez nazwy-3_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: drzewo_01_0
+      name: Bez nazwy-3_0
       rect:
         serializedVersion: 2
-        x: 724
-        y: 26
-        width: 760
-        height: 776
+        x: 327
+        y: 949
+        width: 3118
+        height: 681
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,8 +104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e608bf82da3dda0800000000000000
-      internalID: -5921198693532275173
+      spriteID: f720d665b0c894270800000000000000
+      internalID: 8235267373946176127
       vertices: []
       indices: 
       edges: []
