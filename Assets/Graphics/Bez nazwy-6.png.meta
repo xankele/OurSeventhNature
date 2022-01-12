@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f452abc12367bae4a8c58b69a0abb80b
+guid: 0e0bc86eccd496a45bd79ae7bcd4c788
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5128599351316572639
-    second: Bez nazwy-5_0
+      213: 6880086378243972428
+    second: Bez nazwy-6_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -43,13 +43,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 80, y: 0, z: 2275, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bez nazwy-5_0
+      name: Bez nazwy-6_0
       rect:
         serializedVersion: 2
-        x: 137
-        y: 0
-        width: 1044
-        height: 2480
+        x: 212
+        y: 719
+        width: 3276
+        height: 945
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,8 +104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd9e58200f17c2740800000000000000
-      internalID: 5128599351316572639
+      spriteID: c4d5c37db1afa7f50800000000000000
+      internalID: 6880086378243972428
       vertices: []
       indices: 
       edges: []
