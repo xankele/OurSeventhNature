@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Health : MonoBehaviour
+public class HealthM : MonoBehaviour
 {
     [Header ("Health")]
     [SerializeField] private float startingHealth;
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-                GetComponent<PlayerMovment>().enabled = false;
+                GetComponent<PlayerMovmentM>().enabled = false;
                 dead = true;
                 //yield return new WaitForSeconds(1);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

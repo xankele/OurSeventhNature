@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthCollectible : MonoBehaviour
+public class HealthCollectibleM : MonoBehaviour
 {
     [SerializeField] private float healthValue;
 
@@ -10,7 +10,7 @@ public class HealthCollectible : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<Health>().AddHealth(healthValue);
+            collision.GetComponent<HealthM>().AddHealth(healthValue);
             gameObject.SetActive(false);
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovment : MonoBehaviour
+public class PlayerMovmentM : MonoBehaviour
 {
 
     [SerializeField] private float speed;

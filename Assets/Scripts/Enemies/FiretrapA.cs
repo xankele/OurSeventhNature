@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firetrap : MonoBehaviour
+public class FiretrapA : MonoBehaviour
 {
     [SerializeField] private float damage;
 
@@ -28,7 +28,7 @@ public class Firetrap : MonoBehaviour
             if (!triggered)
                 StartCoroutine(ActivateFiretrap());
             if (active)
-                collision.GetComponent<Health>().TakeDamage(damage);
+                collision.GetComponent<HealthA>().TakeDamage(damage);
         }
     }
     private IEnumerator ActivateFiretrap()

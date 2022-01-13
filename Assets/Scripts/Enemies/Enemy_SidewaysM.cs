@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Sideways : MonoBehaviour
+public class Enemy_SidewaysM : MonoBehaviour
 {
     [SerializeField] private float movementDistance;
     [SerializeField] private float speed;
@@ -43,7 +43,7 @@ public class Enemy_Sideways : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<Health>().TakeDamage(damage);
+            collision.GetComponent<HealthM>().TakeDamage(damage);
         }
     }
 }
