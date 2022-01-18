@@ -8,6 +8,13 @@ public class ShowIntro : MonoBehaviour
 {
     public Text text;
     public Image img;
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            StartCoroutine(HideText());
+        }
+    }
     void Start()
     {
         StartCoroutine(ShowText());
