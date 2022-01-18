@@ -8,6 +8,7 @@ public class ShowIntro : MonoBehaviour
 {
     public Text text;
     public Image img;
+    public bool activeShow = true;
     void Update()
     {
         if (Input.GetKeyDown("space"))
@@ -26,8 +27,11 @@ public class ShowIntro : MonoBehaviour
         {
             text.GetComponent<Text>().color = new Color32(255, 255, 225, (byte)i);
             img.GetComponent<Image>().color = new Color32(255, 255, 225, (byte)i);
-
             yield return new WaitForSeconds(0.04f);
+            if(activeShow == false || Input.GetKeyDown("space"))
+            {
+                break;
+            }
         }
     }
     public void HideThisText()
@@ -36,6 +40,7 @@ public class ShowIntro : MonoBehaviour
     }
     IEnumerator HideText()
     {
+        activeShow = false;
         for (int i = 255; i >= 0; i -= 5)
         {
             text.GetComponent<Text>().color = new Color32(255, 255, 225, (byte)i);
