@@ -20,6 +20,26 @@ public class GameOverMenu : MonoBehaviour
         {
             SceneManager.LoadScene("Level2");
         }
+        else if (level == 3)
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        else if (level == 4)
+        {
+            SceneManager.LoadScene("Level4");
+        }
+        else if (level == 5)
+        {
+            SceneManager.LoadScene("Level5");
+        }
+        else if (level == 6)
+        {
+            SceneManager.LoadScene("Level6");
+        }
+        else
+        {
+            SceneManager.LoadScene("Level7");
+        }
     }
     public void BackToMenu()
     {
