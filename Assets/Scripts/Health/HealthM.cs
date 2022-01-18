@@ -39,7 +39,7 @@ public class HealthM : MonoBehaviour
                 GetComponent<PlayerMovmentM>().enabled = false;
                 dead = true;
                 //yield return new WaitForSeconds(1);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene("Death");
             }
         }
     }

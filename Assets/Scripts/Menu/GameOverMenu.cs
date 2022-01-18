@@ -5,13 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
+    private int level;
+    void Start()
+    {
+        level = PlayerPrefs.GetInt("Level");
+    }
     public void TryAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        if(level == 1)
+        {
+            SceneManager.LoadScene("Level1");
+        }
+        else if (level == 2)
+        {
+            SceneManager.LoadScene("Level2");
+        }
     }
     public void BackToMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene("Menu");
     }
 }
 //nazwy sceny
