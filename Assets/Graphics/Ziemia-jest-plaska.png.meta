@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 6da528c829fa6c942a774a4b1ffaada7
+guid: 59849f92c660c2241beba28ed1986365
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -284084882011664146
-    second: Ziemia_0
+      213: -5915867683346752322
+    second: Ziemia-jest-plaska_0
   - first:
-      213: 2730277766974334800
-    second: Ziemia_1
+      213: -2800088858509856426
+    second: Ziemia-jest-plaska_1
   - first:
-      213: 499828942984582570
-    second: Ziemia_2
+      213: -2417317181966670579
+    second: Ziemia-jest-plaska_2
   - first:
-      213: -7308486579489194667
-    second: Ziemia_3
+      213: 4931868546024346718
+    second: Ziemia-jest-plaska_3
   - first:
-      213: -5546677531514846625
-    second: Ziemia_4
+      213: 2308265238137368888
+    second: Ziemia-jest-plaska_4
+  - first:
+      213: 1190799368889544511
+    second: Ziemia-jest-plaska_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ziemia_0
+      name: Ziemia-jest-plaska_0
       rect:
         serializedVersion: 2
         x: 346
@@ -128,14 +131,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0d2a11e4abe0cf0800000000000000
-      internalID: -284084882011664146
+      spriteID: ebc57e38fad96eda0800000000000000
+      internalID: -5915867683346752322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziemia_1
+      name: Ziemia-jest-plaska_1
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 792
+        width: 516
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651bdf8c4061429d0800000000000000
+      internalID: -2800088858509856426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziemia-jest-plaska_2
       rect:
         serializedVersion: 2
         x: 353
@@ -149,18 +173,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 057e6a6d925e3e520800000000000000
-      internalID: 2730277766974334800
+      spriteID: d05ad6b94d6f37ed0800000000000000
+      internalID: -2417317181966670579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziemia_2
+      name: Ziemia-jest-plaska_3
       rect:
         serializedVersion: 2
-        x: 1016
-        y: 392
+        x: 1151
+        y: 436
         width: 501
         height: 264
       alignment: 0
@@ -170,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa51e0386cfbfe600800000000000000
-      internalID: 499828942984582570
+      spriteID: e5414bcff44817440800000000000000
+      internalID: 4931868546024346718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziemia_3
+      name: Ziemia-jest-plaska_4
       rect:
         serializedVersion: 2
         x: 461
@@ -191,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d36df8d2a039a90800000000000000
-      internalID: -7308486579489194667
+      spriteID: 8317f8e110b980020800000000000000
+      internalID: 2308265238137368888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziemia_4
+      name: Ziemia-jest-plaska_5
       rect:
         serializedVersion: 2
         x: 741
@@ -212,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52ca623c2e3603b0800000000000000
-      internalID: -5546677531514846625
+      spriteID: f3fab6587b1968010800000000000000
+      internalID: 1190799368889544511
       vertices: []
       indices: 
       edges: []
