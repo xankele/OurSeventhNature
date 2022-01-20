@@ -43,18 +43,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1906966517
+  - name: Decorations
+    uniqueID: 1004298421
     locked: 0
-  - name: Wall
-    uniqueID: 501138549
+  - name: GrassOnGrass
+    uniqueID: 4141531235
+    locked: 0
+  - name: Dirt
+    uniqueID: 2621783363
+    locked: 0
+  - name: Grass
+    uniqueID: 1906966517
     locked: 0
   - name: Player
     uniqueID: 1039558317
     locked: 0
-  - name: Obstacle
-    uniqueID: 3064978673
-    locked: 0
-  - name: Ground
-    uniqueID: 3706639387
+  - name: FrontDecorations
+    uniqueID: 1990143427
     locked: 0
