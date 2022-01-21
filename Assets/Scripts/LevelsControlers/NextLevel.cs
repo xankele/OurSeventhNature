@@ -17,7 +17,8 @@ public class NextLevel : MonoBehaviour
         }
             
     }
-    IEnumerator HideGame()
+
+        IEnumerator HideGame()
     {
         for (int i = 0; i <= 255; i += 10)
         {
