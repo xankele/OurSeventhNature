@@ -50,7 +50,7 @@ public class FokusOnBoss : MonoBehaviour
     {
         onCollider = true;
         changeCamera = true;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5.8f);
         this.gameObject.GetComponent<Collider2D>().enabled = true;
         changeCamera = false;
 
