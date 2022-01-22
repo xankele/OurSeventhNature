@@ -16,7 +16,6 @@ public class FokusOnBoss : MonoBehaviour
         {
             if (GameObject.Find("Player_Andrzej") == true)
             {
-                Debug.Log("1");
                 if (onCollider == false)
                 {
                     this.gameObject.GetComponent<Collider2D>().enabled = false;
