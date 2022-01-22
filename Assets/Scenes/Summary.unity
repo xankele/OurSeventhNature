@@ -256,7 +256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Congratulations, you've completed \nall the levels but...\nThe choice
+  m_Text: "Congratulations, you have completed \nall the levels but...\nThe choice
     you made, killing most of the plants, caused the ecosystem to collapse. The environment
     is dying out and we don't have much time left."
 --- !u!222 &362154942
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Congratulations, you've completed \nall the levels but...\nAs a consequence
+  m_Text: "Congratulations, you have completed \nall the levels but...\nAs a consequence
     of the fact that you have refrained from killing plants, that are important to
     the ecosystem, you gave time to our environment to rebuild. \nOur end is not
     so close."

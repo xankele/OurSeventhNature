@@ -786,8 +786,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Micha\u0142 is an above average intelligent character, always looking
-    for the best solutions to situations. In order to overcome the encountered obstacles,
+  m_Text: "Micha\u0142\nAn above average intelligent character, always looking for
+    the best solutions to situations. In order to overcome the encountered obstacles,
     he always leads with his head. He avoids violence but it does not prevent him
     from overcoming obstacles due to his above average physical condition, agility
     and skills."
@@ -1903,10 +1903,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Andrzej is a brave fighter who prefers the shortest and simplest solutions.
+  m_Text: 'Andrzej
+
+    A brave fighter who prefers the shortest and simplest solutions.
     He is not afraid to oppose the enemies, because of his skill he is able to effectively
     stop the enemies. Despite his poor condition, he does not stop but keeps moving
-    forward.
+    forward.'
 --- !u!222 &844127373
 CanvasRenderer:
   m_ObjectHideFlags: 0
