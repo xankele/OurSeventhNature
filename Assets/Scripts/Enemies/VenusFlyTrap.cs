@@ -15,10 +15,25 @@ public class VenusFlyTrap : MonoBehaviour
     private bool triggered;
     public bool active;
 
+    private int life;
+
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
+        if (GameObject.Find("Player_Andrzej") == true)
+        {
+            life = 1;
+        }
+        else
+        {
+            life = 5;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,6 +51,17 @@ public class VenusFlyTrap : MonoBehaviour
                 {
                     //collision.GetComponent<HealthM>().TakeDamage(damage);
                 }
+        }
+        if (collision.tag == "Hit")
+        {
+            if (life > 1)
+            {
+                life--;
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
     private IEnumerator ActivateFiretrap()
