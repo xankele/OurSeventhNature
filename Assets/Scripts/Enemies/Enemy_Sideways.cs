@@ -13,25 +13,10 @@ public class Enemy_Sideways : MonoBehaviour
 
     private float x = 0;
 
-    private int life;
-
-
     private void Awake()
     {
         leftEdge = transform.position.x - movementDistance;
         rightEdge = transform.position.x + movementDistance;
-    }
-
-    private void Start()
-    {
-        if (GameObject.Find("Player_Andrzej") == true)
-        {
-            life = 1;
-        }
-        else
-        {
-            life = 5;
-        }
     }
 
     private void Update()
@@ -72,17 +57,6 @@ public class Enemy_Sideways : MonoBehaviour
             else
             {
                 collision.GetComponent<HealthM>().TakeDamage(damage);
-            }
-        }
-        if (collision.tag == "Hit")
-        {
-            if (life > 1)
-            {
-                life--;
-            }
-            else
-            {
-                this.gameObject.SetActive(false);
             }
         }
     }

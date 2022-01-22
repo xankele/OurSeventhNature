@@ -7,8 +7,6 @@ public class VenusFlyTrapCollider : MonoBehaviour
     public VenusFlyTrap vft;
     private bool active;
 
-
-
     private void Start()
     {
         //this.gameObject.GetComponent<Collider2D>().enabled = false;
@@ -38,8 +36,6 @@ public class VenusFlyTrapCollider : MonoBehaviour
         }
         else
             this.gameObject.GetComponent<Collider2D>().enabled = false;
-
-
 
 
     }
