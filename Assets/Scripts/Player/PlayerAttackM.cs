@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerAttackM : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] fireballs;
+    [SerializeField] private Transform kickPoint;
+    [SerializeField] private Transform punchPoint;
+    [SerializeField] private GameObject kick;
+    [SerializeField] private GameObject punch;
 
     private Animator anim;
     private PlayerMovmentM playerMovement;
@@ -20,8 +22,10 @@ public class PlayerAttackM : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if (Input.GetKeyDown("k") && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack();
+        if (Input.GetKeyDown("l") && cooldownTimer > attackCooldown && playerMovement.canAttack())
+            Attack2();
 
         cooldownTimer += Time.deltaTime;
     }
@@ -31,16 +35,16 @@ public class PlayerAttackM : MonoBehaviour
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 
-        fireballs[FindFireball()].transform.position = firePoint.position;
-        fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
-    }
-    private int FindFireball()
+        kick.transform.position = kickPoint.position;
+        kick.GetComponent<Kopniak>().SetDirection(Mathf.Sign(transform.localScale.x));
+    }    
+    private void Attack2()
     {
-        for (int i = 0; i < fireballs.Length; i++)
-        {
-            if (!fireballs[i].activeInHierarchy)
-                return i;
-        }
-        return 0;
+        anim.SetTrigger("attack2");
+        cooldownTimer = 0;
+
+        punch.transform.position = punchPoint.position;
+        punch.GetComponent<Pacanie>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
+
 }
