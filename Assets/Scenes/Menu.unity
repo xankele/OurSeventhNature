@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.12, y: -9.9507}
+  m_AnchoredPosition: {x: -164.757, y: -9.099989}
   m_SizeDelta: {x: 270.40714, y: 301.89853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60964259
@@ -426,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -123, y: -50.9}
+  m_AnchoredPosition: {x: -147.68, y: -58}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173012125
@@ -1551,7 +1551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.77527, y: -6.5}
+  m_AnchoredPosition: {x: 143.00473, y: -5.4568343}
   m_SizeDelta: {x: 260.47333, y: 298.90164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &560215725
@@ -1586,7 +1586,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Attack\n\n\u24C0 / left mouse button - dealing damage"
+  m_Text: "Attack\n\nMicha\u0142:\n\u24C0 - kick\n\u24C1 - punch\n\nAndrzej:\n\u24C0
+    - use weapon"
 --- !u!222 &560215726
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3181,7 +3182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -167.32, y: -50.9}
+  m_AnchoredPosition: {x: -192, y: -58}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091356958
@@ -3545,8 +3546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.12299, y: -10.553345}
-  m_SizeDelta: {x: 305.55334, y: 333.61658}
+  m_AnchoredPosition: {x: -171.68, y: -9.099998}
+  m_SizeDelta: {x: 305.55334, y: 350.0049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244065116
 MonoBehaviour:
@@ -4104,7 +4105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 167.54, y: -45.951}
+  m_AnchoredPosition: {x: 122.764725, y: -58}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329565774
@@ -4402,8 +4403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.77527, y: -10.5433655}
-  m_SizeDelta: {x: 305.55334, y: 333.61658}
+  m_AnchoredPosition: {x: 143, y: -9.5}
+  m_SizeDelta: {x: 305.55334, y: 350.6166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491036461
 MonoBehaviour:
@@ -4654,7 +4655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 208.01, y: -45.951}
+  m_AnchoredPosition: {x: 163.23474, y: -58}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634274845
