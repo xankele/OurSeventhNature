@@ -53,11 +53,20 @@ TagManager:
   - name: Dirt
     uniqueID: 2621783363
     locked: 0
+  - name: BackDoor
+    uniqueID: 2512248183
+    locked: 0
   - name: Grass
     uniqueID: 1906966517
     locked: 0
+  - name: Boss
+    uniqueID: 1801373383
+    locked: 0
   - name: Player
     uniqueID: 1039558317
+    locked: 0
+  - name: FrontDoor
+    uniqueID: 717563209
     locked: 0
   - name: FrontDecorations
     uniqueID: 1990143427

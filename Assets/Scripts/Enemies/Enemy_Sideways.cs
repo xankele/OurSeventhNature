@@ -42,7 +42,7 @@ public class Enemy_Sideways : MonoBehaviour
         {
             if (transform.position.x > leftEdge)
             {
-                x = x + 0.5f;
+                x = x + Time.deltaTime + 0.5f;
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);   
             }
             else
@@ -52,7 +52,7 @@ public class Enemy_Sideways : MonoBehaviour
         {
             if (transform.position.x < rightEdge)
             {
-                x = x - 0.5f;
+                x = x - Time.deltaTime - 0.5f;
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
             else
