@@ -24,9 +24,10 @@ public class HealthCollectible : MonoBehaviour
             }
             else
             {
-                collision.GetComponent<HealthM>().AddHealth(healthValue);
-                gameObject.SetActive(false);
+                StartCoroutine(HeartNone());
+                audio.clip = audioClip;
                 audio.Play();
+                collision.GetComponent<HealthM>().AddHealth(healthValue);
             }
         }
     }
