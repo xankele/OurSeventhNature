@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Level1 : MonoBehaviour
 {
-    
-
-    void Start()
+    public void Start()
     {
-
         PlayerPrefs.SetInt("Level", 1);
-
     }
-
 }

@@ -9,6 +9,8 @@ public class DestructionOfTheEnvironment : MonoBehaviour
     GameObject[] dryVegetation;
     GameObject[] moreDryVegetation;
 
+    //public Soundtrack soundtrack;
+
     void Start()
     {
         //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 2);
@@ -17,6 +19,8 @@ public class DestructionOfTheEnvironment : MonoBehaviour
 
         if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") == 0)
         {
+            //soundtrack.GetComponent<Soundtrack>().Step_01();
+            //GetComponentInParent<Soundtrack>().Step_01();
             dryVegetation = GameObject.FindGameObjectsWithTag("DryVegetation");
             foreach (GameObject x in dryVegetation)
             {

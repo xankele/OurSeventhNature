@@ -21,6 +21,14 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit :(");
         Application.Quit();
     }
+    public void SoundMenuOn()
+    {
+        PlayerPrefs.SetInt("MenuSound", 1);
+    }
+    public void SoundMenuOff()
+    {
+        PlayerPrefs.SetInt("MenuSound", 0);
+    }
     IEnumerator HideGame()
     {
         for (int i = 0; i <= 255; i += 10)
@@ -40,4 +48,5 @@ public class MainMenu : MonoBehaviour
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
 }

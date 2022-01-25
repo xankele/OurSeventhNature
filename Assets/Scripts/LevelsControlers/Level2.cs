@@ -8,9 +8,7 @@ public class Level2 : MonoBehaviour
 
     void Start()
     {
-
         PlayerPrefs.SetInt("Level", 2);
-
     }
 
 }
