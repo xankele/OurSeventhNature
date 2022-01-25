@@ -20,14 +20,14 @@ public class BossAttack : MonoBehaviour
     private void Start()
     {
         
-        Attack();
+        //Attack();
         
     }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown)
-            Attack();
+        if (cooldownTimer > attackCooldown)
+            //Attack();
 
         cooldownTimer += Time.deltaTime;
     }
