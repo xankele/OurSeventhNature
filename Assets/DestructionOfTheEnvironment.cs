@@ -17,7 +17,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
     {
         destruction = 0;
         PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", 0);
-        PlayerPrefs.SetInt("DestructionOfTheEnvironment", 6);
+        //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 6);
         destruction = PlayerPrefs.GetInt("DestructionOfTheEnvironment");
 
 
