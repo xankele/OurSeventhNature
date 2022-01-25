@@ -75,3 +75,6 @@ TagManager:
   - name: FrontDecorations
     uniqueID: 1990143427
     locked: 0
+  - name: WhiteToYellow
+    uniqueID: 1211171587
+    locked: 0

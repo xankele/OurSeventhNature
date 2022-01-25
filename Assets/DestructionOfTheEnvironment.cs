@@ -8,6 +8,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
     private GameObject[] strongVegetation;
     private GameObject[] dryVegetation;
     private GameObject[] moreDryVegetation;
+    private GameObject whiteSquare;
 
     private int destruction;
 
@@ -16,7 +17,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
     {
         destruction = 0;
         PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", 0);
-        //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 14);
+        PlayerPrefs.SetInt("DestructionOfTheEnvironment", 6);
         destruction = PlayerPrefs.GetInt("DestructionOfTheEnvironment");
 
 
@@ -24,6 +25,9 @@ public class DestructionOfTheEnvironment : MonoBehaviour
         dryVegetation = GameObject.FindGameObjectsWithTag("DryVegetation");
         moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
         weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
+        whiteSquare = GameObject.Find("WhiteSquare");
+
+        
 
         Debug.Log(PlayerPrefs.GetInt("DestructionOfTheEnvironment"));
         Debug.Log(destruction);
@@ -44,6 +48,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
         }
         else if (destruction >= 5 && destruction < 10)
         {
+            whiteSquare.GetComponent<SpriteRenderer>().color = new Color32(236, 183, 0, 70);
             foreach (GameObject x in moreDryVegetation)
             {
                 x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
@@ -59,6 +64,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
         }
         else if (destruction >= 10)
         {
+            whiteSquare.GetComponent<SpriteRenderer>().color = new Color32(236, 183, 0, 110);
             foreach (GameObject x in weakVegetation)
             {
                 x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
