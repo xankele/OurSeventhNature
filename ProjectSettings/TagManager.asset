@@ -10,6 +10,7 @@ TagManager:
   - WeakVegetation
   - StrongVegetation
   - DryVegetation
+  - MoreDryVegetation
   layers:
   - Default
   - TransparentFX
