@@ -13,23 +13,29 @@ public class Enemy_Sideways : MonoBehaviour
 
     private float x = 0;
 
-    private int life;
+    public int life;
+
+    private SpriteRenderer spriteRend;
+
 
     private void Awake()
     {
         leftEdge = transform.position.x - movementDistance;
         rightEdge = transform.position.x + movementDistance;
+
+        spriteRend = GetComponent<SpriteRenderer>();
+
     }
 
     private void Start()
     {
-        if (GameObject.Find("Player_Andrzej") == true)
+        if (PlayerPrefs.GetInt("Choice") == 1)
         {
             life = 1;
         }
-        else
+        if (PlayerPrefs.GetInt("Choice") == 2)
         {
-            life = 5;
+            life = 6;
         }
     }
 
@@ -75,6 +81,7 @@ public class Enemy_Sideways : MonoBehaviour
         }
         if (collision.tag == "Hit")
         {
+            StartCoroutine(GetDamage());
             if (life > 1)
             {
                 life--;
@@ -86,5 +93,12 @@ public class Enemy_Sideways : MonoBehaviour
                 
             }
         }
+    }
+
+    private IEnumerator GetDamage()
+    {
+        spriteRend.color = new Color(1, 0, 0, 0.5f);
+        yield return new WaitForSeconds(0.2f);
+        spriteRend.color = Color.white;
     }
 }

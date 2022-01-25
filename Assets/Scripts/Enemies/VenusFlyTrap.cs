@@ -25,13 +25,13 @@ public class VenusFlyTrap : MonoBehaviour
 
     private void Start()
     {
-        if (GameObject.Find("Player_Andrzej") == true)
+        if (PlayerPrefs.GetInt("Choice") == 1)
         {
             life = 1;
         }
-        else
+        if (PlayerPrefs.GetInt("Choice") == 2)
         {
-            life = 5;
+            life = 6;
         }
     }
 
@@ -53,6 +53,7 @@ public class VenusFlyTrap : MonoBehaviour
         }
         if (collision.tag == "Hit")
         {
+            StartCoroutine(GetDamage());
             if (life > 1)
             {
                 life--;
@@ -67,10 +68,8 @@ public class VenusFlyTrap : MonoBehaviour
     private IEnumerator ActivateFiretrap()
     {
         triggered = true;
-        //spriteRend.color = Color.red;
 
         yield return new WaitForSeconds(activationDelay);
-        //spriteRend.color = Color.white;
         active = true;
         anim.SetBool("activated", true);
 
@@ -78,5 +77,11 @@ public class VenusFlyTrap : MonoBehaviour
         active = false;
         triggered = false;
         anim.SetBool("activated", false);
+    }
+    private IEnumerator GetDamage()
+    {
+        spriteRend.color = new Color(1, 0, 0, 0.5f);
+        yield return new WaitForSeconds(0.2f);
+        spriteRend.color = Color.white;
     }
 }
