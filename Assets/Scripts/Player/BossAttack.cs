@@ -27,7 +27,7 @@ public class BossAttack : MonoBehaviour
     private void Update()
     {
         if (cooldownTimer > attackCooldown)
-            //Attack();
+            Attack();
 
         cooldownTimer += Time.deltaTime;
     }
