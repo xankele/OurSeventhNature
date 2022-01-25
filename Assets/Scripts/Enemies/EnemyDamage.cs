@@ -66,7 +66,7 @@ public class EnemyDamage : MonoBehaviour
     private IEnumerator DyingPlant()
     {
         yield return new WaitForSeconds(0.2f);
-        PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + 1);
+        PlayerPrefs.SetInt("DestructionOfTheEnvironmentOdnThisLevel", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + 1);
         this.gameObject.SetActive(false);
     }
 }

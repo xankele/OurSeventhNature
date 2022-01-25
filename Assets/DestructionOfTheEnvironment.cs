@@ -4,67 +4,81 @@ using UnityEngine;
 
 public class DestructionOfTheEnvironment : MonoBehaviour
 {
-    GameObject[] weakVegetation;
-    GameObject[] strongVegetation;
-    GameObject[] dryVegetation;
-    GameObject[] moreDryVegetation;
+    private GameObject[] weakVegetation;
+    private GameObject[] strongVegetation;
+    private GameObject[] dryVegetation;
+    private GameObject[] moreDryVegetation;
+
+    private int destruction;
 
     //public Soundtrack soundtrack;
-
-    void Start()
+    private void Start()
     {
-        //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 2);
+        destruction = 0;
         PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", 0);
+        //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 14);
+        destruction = PlayerPrefs.GetInt("DestructionOfTheEnvironment");
 
 
-        if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 12)
+        strongVegetation = GameObject.FindGameObjectsWithTag("StrongVegetation");
+        dryVegetation = GameObject.FindGameObjectsWithTag("DryVegetation");
+        moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
+        weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
+
+        Debug.Log(PlayerPrefs.GetInt("DestructionOfTheEnvironment"));
+        Debug.Log(destruction);
+
+        if (destruction < 5)
         {
-            //soundtrack.GetComponent<Soundtrack>().Step_01();
-            //GetComponentInParent<Soundtrack>().Step_01();
-            dryVegetation = GameObject.FindGameObjectsWithTag("DryVegetation");
+
             foreach (GameObject x in dryVegetation)
             {
-                x.SetActive(false);
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
 
             }
-            moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
+
             foreach (GameObject x in moreDryVegetation)
             {
-                x.SetActive(false);
-
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
             }
         }
-        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 12 && PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 25)
+        else if (destruction >= 5 && destruction < 10)
         {
-            weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
-            foreach (GameObject x in weakVegetation)
-            {
-                x.SetActive(false);
-
-            }
-            moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
             foreach (GameObject x in moreDryVegetation)
             {
-                x.SetActive(false);
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
 
             }
-        }
-        else
-        {
-            weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
+
             foreach (GameObject x in weakVegetation)
             {
-                x.SetActive(false);
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
 
             }
 
-            strongVegetation = GameObject.FindGameObjectsWithTag("StrongVegetation");
+        }
+        else if (destruction >= 10)
+        {
+            foreach (GameObject x in weakVegetation)
+            {
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
+
+            }
+
             foreach (GameObject x in strongVegetation)
             {
-                x.SetActive(false);
+                x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
 
             }
         }
+    }
+    private void Update()
+    {
+        //PlayerPrefs.SetInt("DestructionOfTheEnvironment", 2);
+        
+        Debug.Log(destruction);
+
+
     }
 
 }
