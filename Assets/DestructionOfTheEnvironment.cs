@@ -17,7 +17,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
         PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", 0);
 
 
-        if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") == 0)
+        if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 12)
         {
             //soundtrack.GetComponent<Soundtrack>().Step_01();
             //GetComponentInParent<Soundtrack>().Step_01();
@@ -34,7 +34,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
 
             }
         }
-        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") == 1)
+        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 12 && PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 25)
         {
             weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
             foreach (GameObject x in weakVegetation)

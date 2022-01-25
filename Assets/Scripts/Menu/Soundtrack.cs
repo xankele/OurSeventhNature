@@ -19,8 +19,22 @@ public class Soundtrack : MonoBehaviour
     }
     private void Update()
     {
-        sound = PlayerPrefs.GetInt("Level");
+        if (PlayerPrefs.GetInt("Level") == 0)
+        {
+            sound = 0;
+        }
+            if (PlayerPrefs.GetInt("Level") == 1)
+        {
+            sound = 1;
+        }
+        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 12 && PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 25)
+        {
+            sound = 2;
+        }
+
         soundmenu = PlayerPrefs.GetInt("MenuSound");
+
+
         if (soundmenu == 1 && temp2 == false)
         {
             MenuSound();
@@ -31,6 +45,8 @@ public class Soundtrack : MonoBehaviour
             temp = !temp;
             temp2 = !temp2;
         }
+
+
         if (sound == 0 && temp == false)
         {
             MenuSound();
