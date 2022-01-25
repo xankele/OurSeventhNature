@@ -15,6 +15,9 @@ public class PlayerMovmentA : MonoBehaviour
     private float wallJumpCooldown;
     private float horizontalInput;
 
+    public AudioSource audio;
+    public AudioClip audioClip;
+
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -62,6 +65,8 @@ public class PlayerMovmentA : MonoBehaviour
     {
         if (isGrounded())
         {
+            audio.clip = audioClip;
+            audio.Play();
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
         }

@@ -12,6 +12,9 @@ public class PlayerAttackA : MonoBehaviour
     private PlayerMovmentA playerMovement;
     private float cooldownTimer = Mathf.Infinity;
 
+    public AudioSource audio;
+    public AudioClip audioClip;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -21,13 +24,19 @@ public class PlayerAttackA : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown("k") && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        {
             Attack();
+            audio.clip = audioClip;
+            audio.Play();
+        }
+            
 
         cooldownTimer += Time.deltaTime;
     }
 
     private void Attack()
     {
+        
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 

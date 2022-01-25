@@ -7,6 +7,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
     GameObject[] weakVegetation;
     GameObject[] strongVegetation;
     GameObject[] dryVegetation;
+    GameObject[] moreDryVegetation;
 
     void Start()
     {
@@ -22,11 +23,23 @@ public class DestructionOfTheEnvironment : MonoBehaviour
                 x.SetActive(false);
 
             }
+            moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
+            foreach (GameObject x in moreDryVegetation)
+            {
+                x.SetActive(false);
+
+            }
         }
         else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") == 1)
         {
             weakVegetation = GameObject.FindGameObjectsWithTag("WeakVegetation");
             foreach (GameObject x in weakVegetation)
+            {
+                x.SetActive(false);
+
+            }
+            moreDryVegetation = GameObject.FindGameObjectsWithTag("MoreDryVegetation");
+            foreach (GameObject x in moreDryVegetation)
             {
                 x.SetActive(false);
 

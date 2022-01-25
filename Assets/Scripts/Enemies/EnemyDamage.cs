@@ -10,6 +10,9 @@ public class EnemyDamage : MonoBehaviour
 
     private SpriteRenderer spriteRend;
 
+    public AudioSource audio;
+    public AudioClip audioClip;
+
     private void Awake()
     {
         spriteRend = GetComponent<SpriteRenderer>();
@@ -40,6 +43,8 @@ public class EnemyDamage : MonoBehaviour
             }
         if (collision.tag == "Hit")
         {
+            audio.clip = audioClip;
+            audio.Play();
             StartCoroutine(GetDamage());
             if (life > 1)
             {
@@ -47,9 +52,8 @@ public class EnemyDamage : MonoBehaviour
             }
             else
             {
-                PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + 1);
-                this.gameObject.SetActive(false);
-                
+                StartCoroutine(DyingPlant());
+
             }
         }
     }
@@ -58,5 +62,11 @@ public class EnemyDamage : MonoBehaviour
         spriteRend.color = new Color(1, 0, 0, 0.5f);
         yield return new WaitForSeconds(0.2f);
         spriteRend.color = Color.white;
+    }
+    private IEnumerator DyingPlant()
+    {
+        yield return new WaitForSeconds(0.2f);
+        PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + 1);
+        this.gameObject.SetActive(false);
     }
 }
