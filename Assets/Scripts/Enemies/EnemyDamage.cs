@@ -39,7 +39,9 @@ public class EnemyDamage : MonoBehaviour
             }
             else
             {
+                PlayerPrefs.SetInt("DestructionOfTheEnvironmentOnThisLevel", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + 1);
                 this.gameObject.SetActive(false);
+                
             }
         }
     }

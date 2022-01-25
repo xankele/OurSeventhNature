@@ -121,6 +121,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &52174756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52174758}
+  - component: {fileID: 52174757}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &52174757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52174756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36579d146331a94fa1fbb0c278a1401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &52174758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52174756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.10981, y: 5.1082554, z: -163.58067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60964257
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,11 +961,6 @@ MonoBehaviour:
   audio: {fileID: 324430970}
   audioClips:
   - {fileID: 8300000, guid: dd7fcf045b26e8746b16f073e5a2a7e7, type: 3}
-  - {fileID: 8300000, guid: 333bec3d6192a8d449bc9bae84fab9fd, type: 3}
-  - {fileID: 8300000, guid: 333bec3d6192a8d449bc9bae84fab9fd, type: 3}
-  - {fileID: 8300000, guid: 333bec3d6192a8d449bc9bae84fab9fd, type: 3}
-  - {fileID: 8300000, guid: 333bec3d6192a8d449bc9bae84fab9fd, type: 3}
-  - {fileID: 8300000, guid: 333bec3d6192a8d449bc9bae84fab9fd, type: 3}
 --- !u!82 &324430970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1754,7 +1792,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 630653194}
-  - component: {fileID: 630653195}
   - component: {fileID: 630653196}
   m_Layer: 5
   m_Name: Controls
@@ -1784,18 +1821,6 @@ RectTransform:
   m_AnchoredPosition: {x: 26, y: 1.1}
   m_SizeDelta: {x: 511.6806, y: 475.6867}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &630653195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630653193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d01f7f8ba6cf1e4c9b2e9363354a41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &630653196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,8 +2094,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 695853610}
-  - component: {fileID: 695853611}
   - component: {fileID: 695853612}
+  - component: {fileID: 695853611}
   m_Layer: 5
   m_Name: ChooseCharacter
   m_TagString: Untagged
@@ -2111,6 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d01f7f8ba6cf1e4c9b2e9363354a41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 1679963576}
 --- !u!114 &695853612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3259,7 +3285,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208539103}
-  - component: {fileID: 1208539104}
   m_Layer: 5
   m_Name: OdMainMenu
   m_TagString: Untagged
@@ -3288,18 +3313,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00016785, y: 0.000013351}
   m_SizeDelta: {x: 501.54138, y: 418.00006}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1208539104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208539102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d01f7f8ba6cf1e4c9b2e9363354a41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1221102733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,7 +3322,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221102734}
-  - component: {fileID: 1221102735}
   m_Layer: 5
   m_Name: OdMainMenu
   m_TagString: Untagged
@@ -3338,18 +3350,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00016785, y: 0.000013351}
   m_SizeDelta: {x: 501.54138, y: 418.00006}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1221102735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221102733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d01f7f8ba6cf1e4c9b2e9363354a41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1244065114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d01f7f8ba6cf1e4c9b2e9363354a41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 1679963576}
 --- !u!1 &1286870371
 GameObject:
   m_ObjectHideFlags: 0

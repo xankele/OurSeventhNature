@@ -12,6 +12,10 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+        
+            PlayerPrefs.SetInt("DestructionOfTheEnvironment", PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel") + PlayerPrefs.GetInt("DestructionOfTheEnvironment"));
+            Debug.Log("Zniszczenia: " + PlayerPrefs.GetInt("DestructionOfTheEnvironment"));
+            Debug.Log("Zniszczenia na levelu: " + PlayerPrefs.GetInt("DestructionOfTheEnvironmentOnThisLevel"));
             StartCoroutine(HideGame());
             this.gameObject.GetComponent<Collider2D>().enabled = false;
         }
