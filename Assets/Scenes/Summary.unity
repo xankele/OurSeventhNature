@@ -568,7 +568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Congratulations, you have completed \nall the levels but...\nAs a consequence
+  m_Text: "Congratulations, you have completed \nall the levels.\nAs a consequence
     of the fact that you have refrained from killing plants, that are important to
     the ecosystem, you gave time to our environment to rebuild. \nOur end is not
     so close."
