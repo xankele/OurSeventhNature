@@ -46,7 +46,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
                 x.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 225, 0);
             }
         }
-        else if (destruction >= 5 && destruction < 10)
+        else if (destruction >= 5 && destruction < 15)
         {
             whiteSquare.GetComponent<SpriteRenderer>().color = new Color32(236, 183, 0, 70);
             foreach (GameObject x in moreDryVegetation)
@@ -62,7 +62,7 @@ public class DestructionOfTheEnvironment : MonoBehaviour
             }
 
         }
-        else if (destruction >= 10)
+        else if (destruction >= 15)
         {
             whiteSquare.GetComponent<SpriteRenderer>().color = new Color32(236, 183, 0, 110);
             foreach (GameObject x in weakVegetation)

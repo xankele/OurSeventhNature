@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        StartCoroutine(PlayGameNow());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void BackToMenu()
     {
@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt("MenuSound", 0);
     }
+
     IEnumerator HideGame()
     {
         for (int i = 0; i <= 255; i += 10)
@@ -46,7 +47,7 @@ public class MainMenu : MonoBehaviour
             img.GetComponent<Image>().color = new Color32(255, 255, 225, (byte)i);
             yield return new WaitForSeconds(0.04f);
         }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
 }

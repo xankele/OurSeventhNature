@@ -27,9 +27,13 @@ public class Soundtrack : MonoBehaviour
         {
             sound = 1;
         }
-        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 12 && PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 25)
+        else if(PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 5 && PlayerPrefs.GetInt("DestructionOfTheEnvironment") < 15)
         {
             sound = 2;
+        }
+        else if (PlayerPrefs.GetInt("DestructionOfTheEnvironment") >= 15 )
+        {
+            sound = 3;
         }
 
         soundmenu = PlayerPrefs.GetInt("MenuSound");
@@ -62,6 +66,11 @@ public class Soundtrack : MonoBehaviour
             Step_02();
             temp = !temp;
         }
+        if (sound == 2 && temp == true)
+        {
+            Step_03();
+            temp = !temp;
+        }
     }
     public void Start()
     {
@@ -87,6 +96,12 @@ public class Soundtrack : MonoBehaviour
     {
         audio.Pause();
         audio.clip = audioClips[2];
+        audio.Play();
+    }    
+    public void Step_03()
+    {
+        audio.Pause();
+        audio.clip = audioClips[3];
         audio.Play();
     }
 }

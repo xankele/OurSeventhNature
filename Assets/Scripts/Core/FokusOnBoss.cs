@@ -7,6 +7,8 @@ public class FokusOnBoss : MonoBehaviour
     private bool onCollider = false;
     public bool changeCamera = false;
 
+    public AudioSource audio;
+    public AudioClip audioClip;
 
 
 
@@ -14,6 +16,7 @@ public class FokusOnBoss : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            
             if (GameObject.Find("Player_Andrzej") == true)
             {
                 if (onCollider == false)
@@ -47,10 +50,14 @@ public class FokusOnBoss : MonoBehaviour
 
     IEnumerator Hej()
     {
+        audio.clip = audioClip;
+        audio.Play();
         onCollider = true;
         changeCamera = true;
         yield return new WaitForSeconds(2.4f);
         this.gameObject.GetComponent<Collider2D>().enabled = true;
+
+
         changeCamera = false;
 
     }
