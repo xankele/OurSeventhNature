@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - Hit
+  - WeakVegetation
+  - StrongVegetation
+  - DryVegetation
+  - MoreDryVegetation
   layers:
   - Default
   - TransparentFX
@@ -43,18 +48,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Decorations
+    uniqueID: 1004298421
+    locked: 0
+  - name: GrassOnGrass
+    uniqueID: 4141531235
+    locked: 0
+  - name: Dirt
+    uniqueID: 2621783363
+    locked: 0
+  - name: BackDoor
+    uniqueID: 2512248183
+    locked: 0
+  - name: Grass
     uniqueID: 1906966517
     locked: 0
-  - name: Wall
-    uniqueID: 501138549
+  - name: Boss
+    uniqueID: 1801373383
     locked: 0
   - name: Player
     uniqueID: 1039558317
     locked: 0
-  - name: Obstacle
-    uniqueID: 3064978673
+  - name: FrontDoor
+    uniqueID: 717563209
     locked: 0
-  - name: Ground
-    uniqueID: 3706639387
+  - name: FrontDecorations
+    uniqueID: 1990143427
+    locked: 0
+  - name: WhiteToYellow
+    uniqueID: 1211171587
     locked: 0

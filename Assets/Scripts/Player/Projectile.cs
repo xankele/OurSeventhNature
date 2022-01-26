@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     private void Update()
     {
         if (hit) return;
-        float movementSpeed = speed * Time.deltaTime * direction;
+        float movementSpeed = speed * Time.deltaTime * direction * (-1);
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
@@ -31,6 +31,15 @@ public class Projectile : MonoBehaviour
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
+        if (collision.tag == "Player")
+            if (GameObject.Find("Player_Andrzej") == true)
+            {
+                collision.GetComponent<HealthA>().TakeDamage(1);
+            }
+            else
+            {
+                collision.GetComponent<HealthM>().TakeDamage(1);
+            }
     }
     public void SetDirection(float _direction)
     {
@@ -44,7 +53,7 @@ public class Projectile : MonoBehaviour
         if (Mathf.Sign(localScaleX) != _direction)
             localScaleX = -localScaleX;
 
-        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(-localScaleX, transform.localScale.y, transform.localScale.z);
     }
     private void Deactivate()
     {
