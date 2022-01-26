@@ -2656,9 +2656,9 @@ MonoBehaviour:
   m_Text: 'Andrzej
 
     A brave fighter who prefers the shortest and simplest solutions.
-    He is not afraid to oppose the enemies, because of his skill he is able to effectively
-    stop the enemies. Despite his poor condition, he does not stop but keeps moving
-    forward.'
+    He is not afraid of opposing the enemies, because of his skill he is able to
+    effectively stop the enemies. Despite his poor condition, he does not stop but
+    keeps moving forward.'
 --- !u!222 &844127373
 CanvasRenderer:
   m_ObjectHideFlags: 0
